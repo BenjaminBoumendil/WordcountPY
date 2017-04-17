@@ -43,8 +43,7 @@ class WordCount:
         """
         for inputfile in inputfile_list:
             for key, value in self.read_file(inputfile).items():
-                if key:
-                    self.total_words += value
+                self.total_words += value
                 if key in self.words_dict:
                     self.words_dict[key] += value
 
